@@ -1,5 +1,4 @@
 const Discord = require("discord.io");
-const auth = require("./auth.json");
 const logger = require("winston");
 
 logger.remove(logger.transports.Console);
@@ -9,7 +8,7 @@ logger.add(new logger.transports.Console(), {
 logger.level = "debug";
 
 let bot = new Discord.Client({
-  token: auth.token,
+  token: process.env.TOKEN,
   autorun: true,
 });
 bot.on("ready", (evt) => {
