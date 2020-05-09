@@ -1,0 +1,33 @@
+//Everything behind a slash slash
+//is a comment and for orientation and information purpose only
+//The console will not read it, it will read only the commands
+// --- NOTE --- //
+
+//Change to Competetive Modus
+exec gamemode_competitive
+mp_restartgame 1
+
+//Training Modus
+sv_cheats 1 //Cheats allowed
+sv_infinite_ammo 1 //Endless Ammunition and Grenades
+//sv_infinite_ammo 2 //This way you will have to reload but sitll have infinite ammo NEW
+sv_regeneration_force_on 1 //No real damage, only Headshots are deadly
+mp_buytime 100000 //Buy always
+mp_buy_anywhere 1 //Buy everywhere
+mp_maxmoney 50000 //Always maximum Money
+mp_startmoney 50000 //Beginning of a round with maximum Money
+mp_roundtime 60 //How long Round lasts in minutes
+mp_roundtime_defuse 60 //How long Round lasts in minutes
+mp_roundtime_hostage 60 //How long Round lasts in minutes
+mp_freezetime 0 //Freeze time for the player at Roundstart
+mp_maxrounds 200 //Maximum Rounds
+sv_showimpacts 1 //Show Bullet impact
+sv_grenade_trajectory 1 //Show Grenade Tragetory
+sv_showimpacts_time 10 // Expands the showimpacts time to 10 seconds NEW
+ammo_grenade_limit_total 5 // You can now have all 5 grenade types NEW
+mp_limitteams 0 // No team limit - e.g. you can have 10 people or bots on CT and 1 guy on T NEW
+mp_autoteambalance 0 // Turns auto team balance off NEW
+//impulse 101 // Maximum Money
+bot_kick //Kick all Bots
+bind o noclip //Bind Key O to toggle flying
+mp_warmup_end //Finish Warmup 
