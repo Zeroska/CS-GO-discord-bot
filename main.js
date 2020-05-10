@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const logger = require("winston");
-const { prefix, token } = require("./config.json");
+const { prefix} = require("./config.json");
 logger.remove(logger.transports.Console);
 logger.add(new logger.transports.Console(), {
   colorize: true,
