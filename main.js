@@ -16,7 +16,6 @@ bot.on("ready", (evt) => {
 
 
 bot.on("message", (msg) => {
-  let arg = msg.slice()
   if (msg.content === `${prefix}bomb`) {
     const embed = new Discord.MessageEmbed()
       // Set the title of the field
@@ -36,16 +35,31 @@ bot.on("message", (msg) => {
   } else if (msg.content === `${prefix}help`) {
     const helpEmbed = new Discord.MessageEmbed()
     .setTitle("Command the bot can handle")
-    .setColor(0x00ff00)
+    .setColor(0x00ff00)  
     .setDescription("the prefix is !\n the list of command:\n1. bomb\n2. proConfig")
     msg.channel.send(helpEmbed); 
     //This command need to be pay more attention
   } else if (msg.content === `${prefix}proConfig`){
+    //before this, will be a function that process and fetch data form cs go config website (hopefully they won't strike me for this)
+
     const configEmbed = new Discord.MessageEmbed()
     .setTitle(`${player} config`)
     .setColor(0x00ff00)
     .setDescription()
+    msg.channel.send(configEmbed);
+  } else if (msg.content === `${prefix}khuong`){
+    const khuongEmbed = new Discord.MessageEmbed()
+    .setTitle('>>>Life<<<')
+    .setColor(0x00ff00)
+    .setImage("https://ibb.co/TB7XqzX")
+    msg.channel.send(khuongEmbed);
+  } else if (msg.content === `${prefix}jump`){
+    const jumpEmbed = new Discord.MessageEmbed()
+    .setTitle(`Jump Bind`)
+    .setColor(0x00ff00)
+    .setDescription("bind jump for this shit")
+    msg,channel.send(jumpEmbed)
   }
 });
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
