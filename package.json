@@ -2,6 +2,10 @@
   "name": "discordbot",
   "version": "1.0.0",
   "description": "",
+  "engine":{
+    "node": "12.14.x",
+    "npm": "6.13.x"
+  },
   "main": "main.js",
   "dependencies": {
     "discord": "^0.8.2",
