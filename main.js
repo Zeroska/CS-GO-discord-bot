@@ -58,7 +58,7 @@ bot.on("message", (msg) => {
     .setTitle(`Jump Bind`)
     .setColor(0x00ff00)
     .setDescription("bind jump for this shit")
-    msg,channel.send(jumpEmbed)
+    msg.channel.send(jumpEmbed)
   }
 });
 
